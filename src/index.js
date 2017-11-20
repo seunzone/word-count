@@ -4,7 +4,7 @@ const words = (str) => {
   let splittedWords;
 
   //Check if the input field is empty
-  if(str.length == ''){
+  if(str.length < 1){
 	  return 'Cannot be empty';
 	}
 
