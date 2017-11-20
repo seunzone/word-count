@@ -12,6 +12,11 @@ describe("words()", () => {
     assert.equal(JSON.stringify(words("word")), JSON.stringify(ourExpectedCount));
   });
 
+  it("checking for empty input", () => {
+    let ourExpectedCount = 'Cannot be empty';
+    assert.equal(JSON.stringify(words("")), JSON.stringify(ourExpectedCount));
+  });
+
   it("counting for one of each", () => {
     let ourExpectedCount = { one: 1, of: 1, each: 1 };
     assert.equal(JSON.stringify(words("one of each")), JSON.stringify(ourExpectedCount));

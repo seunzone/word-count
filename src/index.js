@@ -3,6 +3,11 @@ const words = (str) => {
 //Declared array to hold splitted words
   let splittedWords;
 
+  //Check if the input field is empty
+  if(str.length == ''){
+	  return 'Cannot be empty';
+	}
+
   if (/\r|\n/.exec(str)) {
     //Eliminates Multiline
       splittedWords = str.split("\n");
